@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            background-image: url('../imagenes/fondo.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            height: auto;
+}
+
+main {
+    height: 100%;
+}
+
+/* ------------- SECCIÓN INICIO ----------------- */
+
+.seccion-inicio {
+    padding: 5%;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-content: center;
+    height: 100%;
+}
+
+.contenedor {
+    min-height: 750px;
+    height: 100%;
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    box-shadow: 1px 2px 3px rgba(128, 128, 128, 0.5);
+    border-style: none;
+    background: #ECE5CE;
+}
+
+/* parte superior contiene img y label BIENVENIDO*/
+.contenedor_partSuperior {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+
+.titulo {
+    color: rgb(186, 57, 0);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Contenedor de la parte inferior */
+.contenedor_partInferior {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.input_producto {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    margin: 23px 0 0;
+}
+
+
+.input_producto input, .input_producto select {
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.input_producto input, .input_producto select{
+    width: 100%;
+}
+
+
+
+/* div button para poner flex y tenerlo al final */
+.div_button_acceder {
+    width: 100%;
+    margin: 20px 0 0;
+} 
+
+.div_button_acceder input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(54, 58, 64);   
+    color: white;
+    font-size: 1rem;
+    border: 0;
+}
+
+.div_button_acceder input:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(186, 57, 0);  
+}
+
+
+
+
+/* ------------- FIN SECCIÓN INICIO ----------------- */
+
+.styled-table { 
+    border-collapse: collapse; 
+    font-size: 1em; 
+    font-family: sans-serif; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+    background: #ECE5CE;
+    text-align: center;
+}
+
+.styled-table thead tr { 
+    background-color: rgb(54, 58, 64);
+    color: #ffffff; 
+}
+
+.styled-table th, .styled-table td { 
+    padding: 12px 15px; 
+}
+
+.styled-table tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+
+.styled-table tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+.styled-table tbody tr:last-of-type { 
+    border-bottom: 2px solid #009879; 
+}
+
+
+
+.td_accion {
+    display: flex;
+}
+
+.accion_btn_editar {
+  padding: 10px 20px;
+  background-color: #54d1b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.5s;
+}
+.accion_btn_editar:hover {
+  background: #00ffff;
+}
+
+
+.accion_btn_eliminar {
+  padding: 10px 20px;
+  background-color: #cc435d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.5s;
+}
+.accion_btn_eliminar:hover {
+  background: red;
+}
+
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 650px) {
+  th {
+    display: block;
+  }
+
+  td {
+    /* Asegurarse de que el contenido no desborde */
+    word-break: break-word;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Estilos para encabezados de tabla */
+  th {
+    text-align: center;
+  }
+
+  /* Estilos para filas de tabla */
+  tr {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+

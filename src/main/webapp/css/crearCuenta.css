@@ -1,0 +1,136 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagenes/fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+}
+
+main {
+    height: 100%;
+}
+
+
+/* Contenedor fondo Principal */
+.contenedorPrincipal {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Contenedor form*/
+.contenedor {
+    margin: 20px auto;
+    max-width: 620px;
+    width: 80%;
+    min-width: 320px;
+    max-height: 600px;
+    height: 80%;
+    min-height: 650px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    box-shadow: 1px 2px 3px rgba(128, 128, 128, 0.5);
+    border-style: none;
+}
+
+/* parte superior contiene img y label BIENVENIDO*/
+.contenedor_partSuperior {
+    width: 100%;
+    height: 40%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+/*icono login encuentra parte superior*/
+.icono_login {
+    width: 25%;
+    min-width: 80px;
+    /*margin-top: 20px;*/
+}
+
+.titulo_login {
+    color: rgb(186, 57, 0);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Contenedor de la parte inferior */
+.contenedor_partInferior {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.input_usuario, .input_contrasena {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #727272;
+    margin: 23px 0 0;
+}
+
+/*input de entrada de contraseña*/
+.input_contrasena{
+    display: flex;
+    align-items: center;
+}
+
+.input_usuario input, .input_contrasena input {
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.input_usuario input{
+    width: 100%;
+}
+
+.input_contrasena input{
+    width: 85%;
+}
+
+
+/* div button para poner flex y tenerlo al final */
+.div_button_acceder {
+    width: 100%;
+    margin: 20px 0 0;
+} 
+
+.div_button_acceder input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(54, 58, 64);   
+    color: white;
+    font-size: 1rem;
+    border: 0;
+}
+
+.div_button_acceder input:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(186, 57, 0);  
+}
+

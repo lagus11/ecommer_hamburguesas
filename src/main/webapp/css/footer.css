@@ -1,0 +1,44 @@
+
+/* ------------- PIE DE PÁGINA ----------------- */
+
+footer {
+    background: rgb(54, 58, 64);
+    color: white;
+    font-family: "Montserrat Alternates", serif;
+    font-size: 1rem;
+}
+
+footer .columnas-pie {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 100px;
+    text-align: center;
+}
+
+footer .contacto, footer .redes, footer .general {
+    padding: 1vw;
+    flex: 1 1 300px;
+    text-align: center; 
+}
+
+footer .contacto a, footer .redes a, footer .general a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .contacto a:hover, footer .redes a:hover, footer .general a:hover {
+    color: rgb(255, 221, 89);
+}
+
+footer .derechos {
+    background: rgb(54, 58, 64);
+    text-align: center;
+    padding: 1.5vh;
+}
+
+/* ------------- FIN PIE DE PÁGINA ----------------- */

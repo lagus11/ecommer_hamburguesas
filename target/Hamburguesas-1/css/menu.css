@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            background-image: url('../imagenes/fondo.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            height: auto;
+}
+
+main {
+    height: 100%;
+}
+
+/* ------------- SECCIÓN CATEGORIAS ----------------- */
+
+.seccion-categorias {
+    height: 100%;
+}
+
+.contenedor-tarjetas {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 10px;
+}
+
+.categoria-tarjeta {
+    background: #ECE5CE;
+    width: 300px;    
+    margin: 8rem auto 2rem auto;
+    padding: 2rem;
+    position: relative;
+    transition: box-shadow 0.5s;
+}
+
+.categoria-tarjeta:hover {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.categoria-titulo {
+    font-family: "Patua One", serif;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    padding: 0.8rem;
+}
+
+.categoria-tarjeta img{
+    width: 180px;
+    border-radius: 50%; 
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+.categoria-tarjeta h2 {
+    color: rgb(186, 57, 0);
+    font-family: "Patua One", serif;
+    padding: 10vh 0 2vh 0; 
+}
+
+.categoria-tarjeta p {
+    font-family: "Montserrat Alternates", serif;
+    padding: 2vh 0 2vh 0; 
+}
+
+.categoria-tarjeta button {
+    background: rgb(186, 57, 0);
+    font-family: "Montserrat Alternates", serif;
+    font-size: 1rem;
+    color: white;
+    display: block;    
+    padding: 4% 8% 4% 8%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.categoria-tarjeta a {
+    text-decoration: none;
+}
+
+.categoria-tarjeta button:hover {
+    background: rgb(255, 221, 89);
+    color: black;
+}
+
+/* ------------- FIN SECCIÓN CATEGORIAS ----------------- */

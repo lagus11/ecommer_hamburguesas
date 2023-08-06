@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+            background-image: url('../imagenes/fondo.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            height: auto;
+}
+
+main {
+    height: 100%;
+}
+
+/* ------------- SECCIÓN INICIO ----------------- */
+
+.seccion-inicio {
+    padding: 5%;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-content: center;
+    height: 100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    min-height: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+/* ------------- FIN SECCIÓN INICIO ----------------- */
+
+.styled-table { 
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-size: 1em; 
+    font-family: sans-serif; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+    background: #ECE5CE;
+    text-align: center;
+}
+
+.styled-table thead tr { 
+    background-color: rgb(54, 58, 64);
+    color: #ffffff; 
+}
+
+.styled-table th, .styled-table td { 
+    padding: 12px 15px; 
+}
+
+.styled-table tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+
+.styled-table tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+.styled-table tbody tr:last-of-type { 
+    border-bottom: 2px solid #009879; 
+}
+
+.comentario {
+    word-wrap: break-word;
+    white-space: normal;
+   
+    overflow-wrap: break-word;
+    max-width: 300px;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 650px) {
+  th {
+    display: block;
+  }
+
+  td {
+    /* Asegurarse de que el contenido no desborde */
+    word-break: break-word;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Estilos para encabezados de tabla */
+  th {
+    text-align: center;
+  }
+
+  /* Estilos para filas de tabla */
+  tr {
+    margin-bottom: 10px;
+  }
+  
+  .comentario {
+      max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
