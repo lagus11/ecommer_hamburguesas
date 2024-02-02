@@ -14,9 +14,8 @@ public class Conexion {
 
 
 	// remoto servidor
-	// String url = "jdbc:postgresql://node143408-prueba.jelastic.saveincloud.net:5432/prueba";
 	// String user = "webadmin";
-	// String password = "PVTqhc11667";
+	// String password = "P11667";
 
 	// local - cambiar por su bd, usuario y contrasena
 	String url = "jdbc:postgresql://localhost:5432/hamburguesas3";
